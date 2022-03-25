@@ -15,7 +15,7 @@ async function fetchDataFromAPIEndPoint() {
     />
     <h2 class="card__heading">${card.properties.Name.title[0].plain_text}</h2>
     <div class="card__price">
-      <p>${card.properties.Precio.rich_text[0].content}</p>
+      <p>${card.properties.Precio.rich_text[0].plain_text}</p>
       <a href="${card.properties.Link.url}" class="card__btn">${card.properties.btn_text.rich_text[0].plain_text}</a>
     </div>
   </article>
